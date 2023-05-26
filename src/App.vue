@@ -1,23 +1,21 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+  <v-app id="inspire">
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Signup from './components/Signup.vue'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Signup,
   },
 
   data: () => ({
-    //
+    drawer: null 
   }),
 }
 </script>
